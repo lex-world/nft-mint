@@ -12,4 +12,6 @@ npx hardhat test
 npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
+npx hardhat run scripts/sample-script.js - to deploy for test
+npx hardhat run scripts/sample-script.js --network networkName - to deploy on your networkName
 ```

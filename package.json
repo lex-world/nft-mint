@@ -13,5 +13,11 @@
     "ethereum-waffle": "^3.0.0",
     "ethers": "^5.0.0",
     "hardhat": "^2.6.8"
+  },
+  "scripts": {
+    "accounts": "npx hardhat accounts",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "run-node": "npx hardhat node"
   }
 }

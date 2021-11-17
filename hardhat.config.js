@@ -17,5 +17,44 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.4",
+  solidity: {
+    version: "0.8.4",
+    // settings: {
+    //   optimizer: {
+    //     enabled: true,
+    //     runs: 200
+    //   }
+    // }
+  },
+  /**
+   * @dev default network for deployment can be set
+   */
+  // defaultNetwork: "rinkeby",
+  // networks: {
+  //   hardhat: {
+  //   },
+  //   rinkeby: {
+  //     url: "https://eth-rinkeby.alchemyapi.io/v2/123abc123abc123abc123abc123abcde",
+  //     accounts: [privateKey1, privateKey2, ...]
+  //   }
+  // },
+
+  /**
+   * @dev paths for the dev info
+   * * Can be customized with the different paths that 
+   * * Hardhat uses by providing an object to the paths
+   */
+  // paths: {
+  //   sources: "./contracts",
+  //   tests: "./test",
+  //   cache: "./cache",
+  //   artifacts: "./artifacts"
+  // },
+
+  /**
+   * @dev on 20sec timeout test
+   */
+  // mocha: {
+  //   timeout: 20000
+  // }
 };
